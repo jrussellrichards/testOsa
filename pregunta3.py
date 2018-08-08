@@ -21,7 +21,7 @@ def x(a):
     return y(a) if a else 1 #En caso de recibir un string vacío se retorna 1, en otro caso se llama a la función y con el string modificado (sin espacios)
 
 if __name__ == "__main__":
-    print(x(''),x('1 2 3 4'),x('1 2 3 4 A?'),x('hola?'),x('HOLA?'))
+    print(x(''),x('1 2 3 4'),x('1 2 3 4 A?'),x('hola?'),x('?'))
     # a='1 2 3 4'
     # a=a.strip()
     # print("a",a)
@@ -36,4 +36,6 @@ if __name__ == "__main__":
 #Problemas
 #Si el último valor del String es un loweCase, el algoritmo retorna 4. Esto se debería corregir recorriendo completamente el string en la línea 10. 
 #La función strip no está haciendo nada actualmente. 
+#En la línea indicada el error encontrado es el siguiente: Se calcula el producto de todos los literales lo que en cadenas grandes requiere mayor tiempo
+#de cómputo que recorrer el arreglo y detenerse cuando encuentre un valor lowerCase: Complejidad O(n) vs O(k).
 

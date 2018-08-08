@@ -1,0 +1,9 @@
+Explique con sus palabras qué diferencias tiene hacer un prefetch_related y un select_related.
+
+¿Cuándo usarías cada uno?
+Dé un ejemplo de cuándo sería conveniente usar una u otra.
+
+La diferencia es que un select_related realiza un JOIN directamente desde sql para obtener la consulta, a diferencia de prefetch_related que realiza otra consulta reduciendo columnas redundantes
+
+
+Utilizaría select_related cuando el objeto a seleccionar es solo uno. Por otra parte si el objeto es un conjunto de otros objetos entonces utilizaría prefetch_related.

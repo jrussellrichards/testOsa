@@ -1,0 +1,14 @@
+
+Si alguna vez has utilizado la API de Facebook, sabrás lo común que "deprecaban" su API. Según usted:
+
+1.Explique la razón por la cuál esta no es una buena práctica.
+2.¿Por qué se dice que las interfaces deben ser "tontas"?
+3.Como aplicaria usted los conceptos de Encapsulamiento, Flexibilidad, Seguridad y Versionamiento en el desarrollo de una Interfaz?
+
+R1.Deprecar apis implica cambios en las versiones nuevas, funciones obsoletas que obligan a cualquier implementación actualizarse a medida que estás apis van cambiando
+
+R2.Debido a que las interfaces deberían tener poca cantidad de campos, lo mejor explicadas posibles, sin mucho texto, ni efectos poco claros Siempre deben entregar feedback Tanto de errores de usuario como de eventos exitosos
+
+R3. Cada componente deberá manejar sus estados independientes de otros y estos dberían ser lo más modular posible. Para la flexibilidad se debe realizar correctamente el diseño del código debido
+a que un código bien hecho implica la posibilidad de modificaciones rápidamente. La ofuscación de código es una manera de mejorar la seguridad de la interfaz. Valifaciones y manejo de credenciales. 
+Para mantener un correcto desempeño en el versionamiento para una interfaz, se debería modularizar esta para lograr unir de mejor manera todos los branch asociados. 
